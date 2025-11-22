@@ -46,11 +46,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build with VitePress
+        working-directory: $GITHUB_WORKSPACE
         run: pnpm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: blog/blog/.vitepress/dist
+          path: $GITHUB_WORKSPACE/.vitepress/dist
 
   # 部署工作
   deploy:
