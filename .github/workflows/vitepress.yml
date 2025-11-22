@@ -45,8 +45,13 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: List VitePress theme
-        run: ls -R .vitepress/theme
+      - name: Debug environment
+        run: |
+          pwd
+          ls -la
+          ls -la docs/.vitepress/theme/components
+          node -v
+          pnpm -v
       - name: Build with VitePress
         run: pnpm run build
       - name: Upload artifact
