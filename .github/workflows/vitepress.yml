@@ -49,7 +49,8 @@ jobs:
         run: |
           pwd
           ls -la
-          ls -la docs/.vitepress/theme/components
+          ls -la .vitepress/theme/components
+          ls -la themes
           node -v
           pnpm -v
       - name: Build with VitePress
