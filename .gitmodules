@@ -1,0 +1,3 @@
+[submodule "themes/blog-pure"]
+	path = themes/blog-pure
+	url = https://github.com/ryan-lee-dev/vitepress-blog-pure.git
