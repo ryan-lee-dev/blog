@@ -1,0 +1,21 @@
+{
+	"name": "vitepress-blog-pure",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"dev": "vitepress dev --host 127.0.0.1",
+		"build": "vitepress build",
+		"preview": "vitepress preview"
+	},
+	"keywords": [],
+	"author": "",
+	"type": "module",
+	"license": "ISC",
+	"devDependencies": {
+		"vitepress": "2.0.0-alpha.15",
+		"globby": "^15.0.0",
+		"gray-matter": "^4.0.3",
+		"fs-extra": "^11.3.2"
+	}
+}
