@@ -6,7 +6,7 @@ tags:
 - vitepress
 - markdown
 - github
-description: 最近有点想写blog记录下工作中的收获，因此倒腾了一段时间，选了一个比较简介的模板来用来写写blog
+description: 最近有点想写blog记录下工作中的收获，因此倒腾了一段时间，选了一个比较简洁的模板来用来写写blog
 ---
 
 # 搭建过程
@@ -44,7 +44,7 @@ description: 最近有点想写blog记录下工作中的收获，因此倒腾了
 
 ## 部署流水线
 
-因为平时工作比较忙，所以我想着使用最简单的方法进行博客的搭建，只进行md文件的编写。其他的流程都是用流水线部署得了。🤔
+因为平时工作比较忙，所以我想着使用最简单的方法进行博客的搭建，只进行md文件的编写。其他的流程都是用Action流水线部署得了。🤔
 
 ```yaml
 # 构建 VitePress 站点并将其部署到 GitHub Pages 的示例工作流程
@@ -124,3 +124,5 @@ jobs:
         uses: actions/deploy-pages@v4
 
 ```
+
+![image-20251215234910660](imgs/my-blog/image-20251215234910660.png)
